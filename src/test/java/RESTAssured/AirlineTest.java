@@ -6,8 +6,6 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.post;
-
 public class AirlineTest {
     @Test()
     void createAirline() {
