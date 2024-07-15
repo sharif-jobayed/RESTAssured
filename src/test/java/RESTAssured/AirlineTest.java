@@ -6,10 +6,12 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static io.restassured.RestAssured.post;
+
 public class AirlineTest {
     @Test()
     void createAirline() {
-        Response response = RestAssured.given()
+        Response response = RestAssured.given().log().all()
                 .baseUri("https://api.instantwebtools.net/v1/airlines")
                 .contentType(ContentType.JSON)
                 .body("{\n" +
@@ -22,7 +24,8 @@ public class AirlineTest {
                         "    \"website\": \"www.srilankaaairways.com\",\n" +
                         "    \"established\": \"1990\"\n" +
                         "}")
-                .post();
+                .post()
+                .then().log().all().extract().response();
         Assert.assertEquals(response.statusCode(), 200, "The request wasn't successful");
     }
 }
