@@ -1,24 +1,106 @@
-# Compiled class file
-*.class
-
-# Log file
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+target/
 *.log
 
-# BlueJ files
-*.ctxt
+# VS Code
+.vscode/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Eclipse IDE
+.project
+.metadata/
+*.tmp
+*.bak
+*.swp
+*.classpath
+*.factorypath
+*.settings/
 
-# Package Files #
+# NetBeans IDE
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Java
+*.class
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
+*.jpd
+*.rbc
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# NodeJS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# JavaScript
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+
+# Gradle
+.gradle/
+
+# Maven
+.mvn/
+
+# Allure Report
+allure-results/
+allure-report/
+
+# TestNG
+test-output/
+
+# Cucumber
+.cucumber/
+cucumber-report-html/
+
+# Selenium
+.selenium/
+
+# REST Assured
+
+# Operating System-specific files and directories
+# Windows
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Linux
+*~
+.nfs*
+
+# Unnecessary directories and files
+*.swo
+*.swn
+*.swd
+*.pid
+*.seed
+*.pid.lock
+*.local
+*.swm
+*.swx
+*.dwl
+*.dwl2
+*.dwl3
+*.dwl4
