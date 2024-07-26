@@ -3,8 +3,8 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestExamples {
-    public TestExamples() {}
+public class TestExamples_01 {
+    public TestExamples_01() {}
 
     @Test(priority = 1)
     public void get_01() {
