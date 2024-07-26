@@ -15,8 +15,8 @@ public class TestExamples_02 {
                 .get("users?page=2")
                 .then()
                 .statusCode(200)
-                .body("data[3].first_name", equalTo("Byron"))
                 .log().all()
+                .body("data[3].first_name", equalTo("Byron"))
         ;
     }
 }
