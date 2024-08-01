@@ -12,11 +12,11 @@ public class TestExamples_02 {
     @Test(priority = 1)
     public void cucumber_01() {
         given()
-                .get("users?page=2")
-                .then()
-                .statusCode(200)
-                .log().all()
-                .body("data[3].first_name", equalTo("Byron"))
+            .get("users?page=2")
+        .then()
+            .statusCode(200)
+            .log().all()
+            .body("data[3].first_name", equalTo("Byron"))
         ;
     }
 }
