@@ -11,7 +11,7 @@ public class PutRequestTest {
             1,
             1,
             "A PUT practice",
-            "This post was updated using PUT request"
+            "This post is updated using PUT request"
     );
 
     @Test(priority = 1)
