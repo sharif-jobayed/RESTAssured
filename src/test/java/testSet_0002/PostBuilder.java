@@ -1,7 +1,5 @@
 package testSet_0002;
 
-import com.google.gson.Gson;
-
 public class PostBuilder {
     private int userId;
     private int id;
@@ -31,7 +29,7 @@ public class PostBuilder {
         return this.body;
     }
 
-    public String buildThePost() {
-        return new Gson().toJson(new PostBuilder(getUserId(), getId(), getTitle(), getBody()));
-    }
+//    public String buildThePost() {
+//        return new Gson().toJson(new PostBuilder(getUserId(), getId(), getTitle(), getBody()));
+//    }
 }
