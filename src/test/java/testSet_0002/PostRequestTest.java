@@ -6,14 +6,16 @@ import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.*;
 
 public class PostRequestTest {
+
+    private PostBuilder post0001 = new PostBuilder(
+            1,
+            101,
+            "About REST Assured POST",
+            "With REST Assured, you can send a POST request by including a body payload in the request."
+    );
+
     @Test
     public void createPostTest() {
-        PostBuilder post0001 = new PostBuilder(
-                1,
-                101,
-                "About REST Assured POST",
-                "With REST Assured, you can send a POST request by including a body payload in the request."
-        );
 
         RestAssured
             .given()
@@ -26,7 +28,7 @@ public class PostRequestTest {
 //                        "   \"body\": \"With REST Assured, you can send a POST request by including a body payload in the request.\"    "+
 //                        "}")
 //                .body(post0001.buildThePost())
-                .body(post0001)
+                .body(this.post0001)
 
             .when()
                 .post("posts/")
@@ -41,4 +43,5 @@ public class PostRequestTest {
 
         ;
     }
+
 }
