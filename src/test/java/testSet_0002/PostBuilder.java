@@ -30,6 +30,6 @@ public class PostBuilder {
     }
 
 //    public String buildThePost() {
-//        return new Gson().toJson(new PostBuilder(getUserId(), getId(), getTitle(), getBody()));
+//        return new Gson().toJson(this);
 //    }
 }

@@ -10,7 +10,7 @@ public class PostRequestTest {
     public void createPostTest() {
         PostBuilder user0001 = new PostBuilder(
                 1,
-                1,
+                101,
                 "About REST Assured POST",
                 "With REST Assured, you can send a POST request by including a body payload in the request."
         );
@@ -37,6 +37,7 @@ public class PostRequestTest {
                 .body("title", containsString("About"))
                 .body("body", notNullValue())
                 .body("body", containsString("you can"))
+                .body("id", is(101))
 
         ;
     }
