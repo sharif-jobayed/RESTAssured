@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.*;
 
 public class GetRequestTest {
 
-    @Test
+    @Test(priority = 1)
     public void getPostTest() {
         RestAssured
             .given() // Pre-conditions

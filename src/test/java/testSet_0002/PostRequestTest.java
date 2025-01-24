@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.*;
 public class PostRequestTest {
     @Test
     public void createPostTest() {
-        PostBuilder user0001 = new PostBuilder(
+        PostBuilder post0001 = new PostBuilder(
                 1,
                 101,
                 "About REST Assured POST",
@@ -25,8 +25,8 @@ public class PostRequestTest {
 //                        "   \"title\": \"A demo title\", \n    " +
 //                        "   \"body\": \"With REST Assured, you can send a POST request by including a body payload in the request.\"    "+
 //                        "}")
-//                .body(user0001.buildThePost())
-                .body(user0001)
+//                .body(post0001.buildThePost())
+                .body(post0001)
 
             .when()
                 .post("posts/")
