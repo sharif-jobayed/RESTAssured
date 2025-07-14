@@ -10,6 +10,8 @@ import static org.hamcrest.Matchers.*;
 @Feature("Posts Endpoint")
 public class JSONPlaceholderAPITest extends BaseAPITest {
 
+    /*----------------------GET Requests----------------------*/
+
     @Test(description = "Get post by ID")
     @Story("Retrieve Post Data")
     @Severity(SeverityLevel.CRITICAL)
@@ -29,24 +31,6 @@ public class JSONPlaceholderAPITest extends BaseAPITest {
         ;
     }
 
-    @Test(description = "Get comments by post ID")
-    @Story("Retrieve Comments")
-    @Severity(SeverityLevel.NORMAL)
-    public void testGetCommentsByPostId() {
-        given()
-                .spec(requestSpec)
-                .queryParam("postId", 1)
-
-        .when()
-                .get("/comments")
-
-        .then()
-                .statusCode(200)
-                .body("", hasSize(greaterThan(0)))
-                .body("postId", everyItem(equalTo(1)))
-                .body("email", everyItem(containsString("@")))
-
-        ;
-    }
+    /*----------------------GET Requests end----------------------*/
 
 }

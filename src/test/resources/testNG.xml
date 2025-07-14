@@ -3,6 +3,7 @@
     <test name="JSONPlaceholder Tests">
         <classes>
             <class name="api.JSONPlaceholderAPITest"/>
+            <class name="api.CommentsAPITest"/>
         </classes>
     </test>
 </suite>
