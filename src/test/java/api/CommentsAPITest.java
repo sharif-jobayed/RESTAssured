@@ -55,7 +55,8 @@ public class CommentsAPITest extends BaseAPITest {
                 .body("name", equalTo("Test User"))
                 .body("email", equalTo("test.user@example.com"))
                 .body("body", containsString("REST Assured"))
-                .extract().response();
+                .extract()
+                .response();
 
         Allure.addAttachment("Request", "application/json",
                 "{\"postId\":1,\"name\":\"Test User\",\"email\":\"test.user@example.com\",\"body\":\"This is a test comment created via REST Assured\"}");
